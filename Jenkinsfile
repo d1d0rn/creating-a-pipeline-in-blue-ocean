@@ -12,5 +12,10 @@ pipeline {
         sh 'npm install'
       }
     }
+    stage('ttest') {
+      steps {
+        input(message: 'ok?', id: 'okkk', ok: 'o_k')
+      }
+    }
   }
 }
